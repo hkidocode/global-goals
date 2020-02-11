@@ -1,0 +1,546 @@
+
+/*  FONTS  */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+/*  UNIVERSAL SELECTOR  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*  BASE STYLES */
+
+
+
+header {
+    background-color: rgba(235, 32, 56, .36);
+}
+
+
+
+.logo {
+    display: inline-block;
+    /* width: 300px;
+    height: 280px; */
+    margin: -60px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+
+.main-content-header {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 2fr 1fr;
+    grid-area: 'column-1  column-2',
+                'column-1  column-2',
+                'buttons ..';
+}
+
+.column-1 {
+    flex-grow: 2;
+    margin-right: 60px;
+    margin-top: 100px;
+}
+
+.column-2 {
+    flex-grow: 1;
+}
+
+.screen {
+    width: 380px;
+    height: 560px;
+    border-radius: 40px 0 40px 40px;
+}
+.main-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #578E5B;
+    text-align: justify;
+}
+
+
+.site-description {
+    color: #578E5B;
+    line-height: 1.4;
+    margin-bottom: 60px;
+}
+ .buttons {
+     display: flex;
+     margin: auto;
+}
+
+ .don-button {
+     display: inline-block;
+     background-color: #578E5B;
+     color: white;
+     padding: 14px 40px;
+     border-radius:  20px 20px 0 20px;
+     margin-right: 40px;
+     font-size: 20px;
+     font-weight: bold;
+     transition-property: background-color color;
+     transition-duration: .2s .2s .2s;
+     
+}
+
+.discover-button {
+    display: inline-block;
+    color: #578E5B;
+    padding: 14px 40px;
+    border: 1px solid #578E5B;
+    border-radius: 20px 20px 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: .2s;
+
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+.sponsors-heading {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(235, 32, 56);
+    margin-bottom: 40px;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 60px;
+    width: 80%;
+}
+
+.sponsors .unicef-logo {
+    width: 120px;
+    height: 100px;
+}
+
+.sponsors .united-nations-logo {
+    width: 120px;
+    height: 100px;
+
+}
+
+.sponsors .meteo-logo {
+    width: 200px;
+    height: 100px;
+
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+ .climat {  
+     display: flex;
+     margin-bottom: 100px;
+ }
+
+
+ .climatique-img {
+     flex-grow: 1;
+     order: -1;
+     width: 360px;
+     height: 300px;
+     border-radius: 70px 70px 0 70px;
+     margin-right: 100px;
+ }
+
+ .climatique-content {
+    flex-grow: 2;
+    margin-top: 40px;
+}
+
+ .article-heading {
+    margin-bottom: 46px;
+    font-size: 1.8em;
+    color: rgb(235, 32, 56);
+
+}
+
+ .article-content {
+   margin-bottom: 50px;
+   font-size: 1.2em;
+   text-align: justify;
+   text-indent: 16px;
+   line-height: 1.6;
+}
+
+ .pauvre {
+    display: flex;
+    margin-bottom: 100px;
+ }
+
+.pauvreté-img {
+    flex-grow: 1;
+    width: 360px;
+    height: 300px;
+    border-radius: 0px 70px 70px 70px;
+}
+
+.pauvreté-content {
+    flex-grow: 2;
+    margin-top: 40px;
+    order: -1;
+    margin-right: 100px;
+
+ }
+
+ 
+
+.education {
+    display: flex;
+    margin-bottom: 100px;
+ }
+
+.education-img {
+    flex-grow: 1;
+    order: -1;
+    width: 360px;
+    height: 300px;
+    border-radius: 70px 70px 0 70px;
+    margin-right: 100px;
+}
+
+ .education-content {
+    flex-grow: 2;
+    margin-top: 40px;
+ }
+
+ 
+
+.second-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+ 
+ .article-heading {
+    margin-bottom: 46px;
+    font-size: 1.5em;
+    color: rgb(235, 32, 56);
+}
+
+.second-section .article-content {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 80px;
+
+}
+
+.download-buttons {
+    display: flex;
+}
+
+.play-store {
+    margin-left: auto;
+    margin-right: 70px;
+    background-color: #578E5B;
+    background-image: url(../img/brand.png);
+    background-repeat: no-repeat;
+    background-position: 3px 14px;
+    padding: 8px 30px;
+    border-radius: 12px 12px 12px 12px;
+
+}
+
+
+.app-store {
+    margin-right: auto;
+    background-color: #578E5B;
+    background-image: url(../img/app.png);
+    background-repeat: no-repeat; 
+    background-position: 3px 14px ;
+    padding: 8px 30px;
+    border-radius: 12px 12px 12px 12px;
+
+}
+
+.ios,
+.ios-store,
+.android,
+.google-play {
+    color: white;
+    font-weight: normal;
+    margin-left: 16px;
+}
+
+.size {
+    width: 100px;
+    height: 100px;
+}
+
+.social-media {
+    display: flex;
+    margin-top: 26px;
+    
+}
+
+.facebook {
+    margin-left: auto;
+    opacity: .7;
+}
+
+.whatsapp {
+    margin-right: auto;
+    opacity: .7;
+}
+
+.social-media-opacity {
+    opacity: .7;
+}
+
+footer {
+    background-color: rgba(235, 32, 56, .36);
+    width: 100vw;
+    height: 60px;
+    margin-top: -4px;
+    
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-bottom: -50px;
+    font-size: 1.2em;
+    font-weight: 550;
+    color: white;
+}
+
+/*  TRANSITIONS AND TRANSORMS */
+
+.screen:hover {
+    transform: scale(1.02);
+}
+
+.don-button:hover {
+    background-color: white;
+    color: #578E5B;
+}
+
+.discover-button:hover {
+    background-color: white;
+}
+
+.climatique-img:hover {
+    box-shadow: 5px 5px 5px grey;
+    transform: rotate(1deg);
+}
+
+.pauvreté-img:hover {
+    box-shadow: 5px 5px 5px grey;
+    transform: rotate(-1deg);
+}
+
+.education-img:hover {
+    box-shadow: 5px 5px 5px grey;
+    transform: rotate(1deg);
+}
+
+
+.facebook:hover {
+    opacity: 1;
+}
+
+.whatsapp:hover {
+    opacity: 1;
+}
+
+.twitter:hover {
+    opacity: 1;
+}
+
+.instagram:hover {
+    opacity: 1;
+}
+
+/*  MEDIA QUERIES */
+
+/*  LARGE TABLETT */
+@media (min-width: 967px) and (max-width: 1110px) {
+    .logo {
+        width: 260px;
+        height: 240px;
+    }
+
+    .screen {
+        width: 280px;
+        height: 460px;
+        border-radius: 30px 0 30px 30px;
+        margin-top: 90px;
+    }
+
+    .article-heading {
+        margin-bottom: 46px;
+        font-size: 1.3em;
+    
+    }
+    
+     .article-content {
+       margin-bottom: 50px;
+       font-size: 1em;
+       text-align: justify;
+       text-indent: 16px;
+       line-height: 1.6;
+    }
+
+    .don-button {
+        border-radius:  16px 16px 0 16px;
+        margin-right: 30px;
+        font-size: 18px;
+        font-weight: bold;        
+   }
+   
+   .discover-button {
+       border-radius: 16px 16px 16px 0;
+       font-size: 18px;
+       font-weight: bold;
+   
+   }
+
+   .sponsors-heading {
+    font-size: 1.3em;
+    }
+
+    .sponsors .unicef-logo {
+        width: 120px;
+        height: 100px;
+    }
+
+    .sponsors .united-nations-logo {
+        width: 120px;
+        height: 100px;
+
+    }
+
+    .sponsors .meteo-logo {
+        width: 200px;
+        height: 100px;
+
+    }
+
+    .sponsors .unicef-logo {
+        width: 90px;
+        height: 70px;
+    }
+    
+    .sponsors .united-nations-logo {
+        width: 90px;
+        height: 70px;
+    
+    }
+    
+    .sponsors .meteo-logo {
+        width: 90px;
+        height: 70px;
+    
+    }
+
+    .climatique-img {
+        width: 320px;
+        height: 260px;
+        border-radius: 60px 60px 0 60px;
+        margin-right: 80px;
+        margin-top: 26px;
+    }
+
+    .pauvreté-img {
+        width: 320px;
+        height: 260px;
+        border-radius: 60px 60px 0 60px;
+        margin-top: 26px;
+        }
+    .education-img {
+        width: 320px;
+        height: 260px;
+        border-radius: 60px 60px 0 60px;
+        margin-right: 80px;
+        }
+
+
+   .article-heading {
+       margin-bottom: 46px;
+       font-size: 1.5em;
+   
+   }
+   
+    .article-content {
+      font-size: 1em;
+      line-height: 1.5;
+   }
+   
+   .download-buttons h4 {
+       font-size: 16px;
+   }
+   .download-buttons h2 {
+        font-size: 20px;
+    }
+
+    .play-store {
+        border-radius: 9px 9px 0 9px;
+        margin-right: 30px;
+
+    }
+
+    .app-store {
+        border-radius: 9px 9px 0 9px;
+
+    }
+
+    .footer-copyright {
+        padding-bottom: -50px;
+        font-size: 1em;
+    }
+
+
+}
+
+ @media (min-width: 650px) and (max-width: 966px) {
+     .main-content-header {
+         flex-direction: column;
+     }
+
+     .logo {
+        width: 240px;
+        height: 220px;
+    }
+    .column-2 {
+        margin: auto;
+        order: ;
+    }
+
+    .screen {
+        width: 280px;
+        height: 460px;
+        border-radius: 30px 0 30px 30px;
+        margin-top: 100px;
+    }
+
+ }
+
+ @media (min-width: 375px) and (max-width: 960px){
+     .main-content-header {
+        grid-template-columns: 1fr;
+        grid-area: 'column-1',
+                    'buttons',
+                    'column-2';
+     }
+ }
+
+
